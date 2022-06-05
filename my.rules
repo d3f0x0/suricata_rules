@@ -1,0 +1,2 @@
+alert http any any -> any any (msg:"ROOTIK HTTP POSSIBLE DOWNLOAD MSDT"; content:"200"; http.stat_code; file_data; content:"ms-msdt:/id"; http.content_type; content:"text/html"; classtype:trojan-activity; rev:1; sid:1; reference: url, https://msrc-blog.microsoft.com/2022/05/30/guidance-for-cve-2022-30190-microsoft-support-diagnostic-tool-vulnerability;)
+
